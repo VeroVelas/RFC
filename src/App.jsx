@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Automata from "../src/components/graph"; // Asegúrate de que la ruta sea correcta
+import Automata from "../src/components/graph"; 
 
 function App() {
 
@@ -27,7 +27,7 @@ function App() {
           placeholder="Escriba VEJV aquí"
         />
         <button
-          onClick={handleValidate} // Valida el RFC cuando se hace clic en el botón
+          onClick={handleValidate} 
           className="w-full bg-pink-500 text-white p-3 rounded-md hover:bg-pink-600 transition duration-300"
         >
           Validar
@@ -40,7 +40,7 @@ function App() {
           )}
         </div>
         <div className="mt-6">
-          <Automata rfc={rfc} /> {/* Utiliza el componente Automata, pasando el estado 'rfc' como prop */}
+          <Automata rfc={rfc} /> {}
         </div>
       </div>
     </div>

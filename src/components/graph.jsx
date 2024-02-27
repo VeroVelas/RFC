@@ -6,7 +6,7 @@ function Automata({ rfc }) {
     const ref = useRef();
 
     useEffect(() => {
-        if (rfc.length >= 4 && /^V[EJV]{3}$/i.test(rfc)) { // Cambia la expresión regular aquí
+        if (rfc.length >= 4 && /^V[EJV]{3}$/i.test(rfc)) { 
             generarAutomata(rfc);
         } else {
             d3.select(ref.current).select("svg").remove();
